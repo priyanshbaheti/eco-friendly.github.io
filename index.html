@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My website</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		.container a{
+              padding: 20px 30px;
+                   color: black;
+                   text-decoration: none;
+		}
+		.large{
+			font-size: 36px;
+			font-family: sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+
+	<center>
+		<p class="large">ECO GROUP</p>
+	<div class="container">
+		<a href="#">Home</a>
+		<a href="#" class="About">About</a>
+		<a href="#" class="Contact">Contact</a>
+	</div><br><br>
+	<div>
+	<img src="images/header.jpg" width="500px" height="300px" align="left">
+
+</center>
+	<p>"Climate change imperils everything we seek to accomplish and for that reason we're<br> mobiling  a global campaign to be a part of solution."<br><br>
+	Climate charge is one of the worlds most uragant challengesand an immendilaterisk to our <br>communities economies and to our conversation misson.We must act-as indiviuals in our communities as business leaders,abd policy makers.<br><br>
+	The Nature Conservancy promoting practical innotive solutions to<br> create a prosperous. Low-carbon future> 
+	that cleaner.healthier and more secutre for everyone.<br><br>
+
+
+</p><br><br><br><br><br><br><hr><br></div>
+<div class="container">
+<section class="featured-products">
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="images/dewdrop.jpg"  height="200px" width="300px">
+			<p>Save earths !save earths water,land and from where live.</p>
+			<button style="background-color: black; color: white; height: 30px; width: 100px; ">LEARN</button>
+		</div>
+		<div class="col-md-4">
+			<img src="images/takeaction.jpg" width="300px" height="200px">
+			<p>Plant more and more trees and dont polute enviroment</p>
+			<button style="background-color: black; color: white; height: 30px; width: 100px; ">LEARN</button>
+		</div>
+		<div class="col-md-4">
+			<img src="images/dewdrop.jpg" height="200px" width="300px">
+			<p>want to get involved.get involved right now.become incharge of this area</p>
+			<button style="background-color: black; color: white; height: 30px; width: 100px; ">LEARN</button>
+		</div>
+	</div>
+</div>
+</section><br><br><br>
+
+<button class="btn btn-primary" data-target="#mymodal" data-toggle="modal" autofocus>Sign up</button>
+<div class="modal position-center" id="mymodal">
+	  
+	  <div class="modal-dialog">
+	  	 <div class="modal-content">
+	  	 	<div class="modal-header">
+	  	 		<h4>sign up</h4>
+	  	 		<button class="close" type="button" data-dismiss="modal">&times;</button>
+	  	 	</div>
+	  	 	<form action="" onsubmit="return validation()">
+	  	 	<div class="modal-body">
+	  	 	   <div class="form-group">
+	  	 	   	 <label>Usename:</label>
+	  	 	   	   <input type="text" name="" class="form-control" id="user" maxlength="20" minlength="3">
+	  	 	   	    <span class="text-danger" id="usererror"></span>
+	  	 	   </div>
+	  	 	   <div class="form-group">
+	  	 	   	 <label>Password</label>
+	  	 	   	   <input type="password" name="" class="form-control" id="pass">
+                     <span class="text-danger" id="passer" ></span>
+	  	 	   </div>
+	  	 	   <input type="submit" name="" class="btn btn-success">
+	  	 	</div>
+	  	<div class="modal-footer">
+	  		  <div class="row">
+	  		<button type="buuton" class="btn btn-danger" data-dismiss="modal"> Close</button>
+
+	  	</div>
+	  	</div>
+	  </form>
+	  	 </div>
+	  </div>
+</div>
+
+</div>
+ <button class="btn btn-primary">primary</button>
+<button class="btn btn-success">primary</button>
+<button class="btn btn-danger">primary</button>
+<button class="btn btn-secondary">primary</button>
+<button class="btn btn-info">primary</button>
+<button class="btn btn-warning">primary</button>
+<div class="spinner-border text-danger"></div>
+<div class="spinner-border text-primary"></div>
+
+
+
+  <script type="text/javascript">
+  	function validation() {
+  		var user= document.getElementById('user').value;
+  		 var pass =document.getElementById('pass').value;
+  		if (user=="") {
+  			document.getElementById('usererror').innerHTML="please fill your user name";
+  			return false;
+  		}
+  		if (pass=="") {
+  			document.getElementById('passer').innerHTML="please fill your password";
+  			 return false;
+  		}
+
+  	}
+  </script>
+</body>
+</html>
